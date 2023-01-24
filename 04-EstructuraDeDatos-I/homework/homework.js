@@ -20,7 +20,7 @@ definir funciones que logren los mismos resultados pero de manera iterativa.
 */
 
 function nFactorial(n) {
-if (n > 0 && n < 2){
+if (n >= 0 && n < 2){
   return 1
 }
  return n * nFactorial(n - 1)
@@ -45,9 +45,9 @@ que ingresa es el primero que se quita. Definir los siguientes métodos:
 Pueden utilizar class o función constructora.
 */
 
-function Queue() {
+  function Queue() {
   this.arreglo = []
-}
+  }
  
   Queue.prototype.enqueue = function(valor){
     this.arreglo.push(valor)
@@ -60,12 +60,6 @@ function Queue() {
   Queue.prototype.size = function(){
     return this.arreglo.length
   }
-
-
-
-
-
-
 
 /*⚠️ No modificar nada debajo de esta línea ⚠️*/
 module.exports = {
